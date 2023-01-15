@@ -10,5 +10,12 @@ namespace Entities
         public string FullName { get; set; }
 
         public string Biography { get; set; }
+
+        public ICollection<Movie> Movies { get; set; }
+
+        public Actor()
+        {
+            Movies = new HashSet<Movie>();
+        }
     }
 }
