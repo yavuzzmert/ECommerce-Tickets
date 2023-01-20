@@ -4,7 +4,7 @@ using Entities;
 
 namespace DAL.Abstract
 {
-    public interface ICinemeDAL : IRepository<Cinema>
+    public interface ICinemaDAL : IRepository<Cinema>
     {
 
     }
