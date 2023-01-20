@@ -49,6 +49,7 @@ namespace DAL.Concrete.Context
                         },
                     });
                 _dbContext.SaveChanges();
+
             }
 
             if (!_dbContext.Actors.Any())
