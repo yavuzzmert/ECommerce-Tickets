@@ -1,11 +1,6 @@
 ﻿using Entities;
 using Entities.Enums;
-using Microsoft.AspNetCore.Builder;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DAL.Concrete.Context
 {
@@ -48,6 +43,7 @@ namespace DAL.Concrete.Context
                             Description = "This is the description of the first cinema"
                         },
                     });
+
                 _dbContext.SaveChanges();
 
             }
@@ -88,6 +84,7 @@ namespace DAL.Concrete.Context
                             ProfilePictureURL = "http://dotnethow.net/images/actors/actor-5.jpeg"
                         }
                     });
+
                 _dbContext.SaveChanges();
             }
 
@@ -127,6 +124,7 @@ namespace DAL.Concrete.Context
                             ProfilePictureURL = "http://dotnethow.net/images/producers/producer-5.jpeg"
                         }
                     });
+
                 _dbContext.SaveChanges();
             }
 
@@ -207,9 +205,9 @@ namespace DAL.Concrete.Context
                             MovieCategory = MovieCategory.Drama
                         }
                     });
+
                 _dbContext.SaveChanges();
             }
-
         }
     }
 }
